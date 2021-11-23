@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Online!</title>
+</head>
+<body>
+    <div class="nav-top">
+        <a href="#" class="nav brand">Clothes Online!</a>
+        <a href="#" class="nav wear">Women's Wear</a>
+        <a href="#" class="nav wear">Men's Wear</a>
+        <a href="#" class="nav cart">Cart</a>
+    </div>
+
+
+    {% block content %}
+    
+    {% endblock content%}
+
+    <style>
+        .nav-top{
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            align-items: center;
+        }
+        .nav{
+            background: #abea7c;
+        }
+
+        .brand{
+            weight: bold;
+            font-size: 48px;
+        }
+
+        .nav-top a{
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+    
+</body>
+</html>
